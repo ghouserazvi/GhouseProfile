@@ -1,0 +1,230 @@
+    
+
+    .header{
+    height: 50rem;
+    width: 100%;
+    background-color: #C5FAD5;
+    display: grid;
+    grid-template-columns:  1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 4fr;
+    align-items: center;
+    justify-items: center;
+    position: relative;
+    /* background-image: url("./assets/resumeBG.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover; */
+}
+
+section{
+    padding: 20px;
+}
+
+.mountain{
+    grid-area: 6/2/7/3;
+    position: absolute;
+    margin-bottom: 359px;
+
+}
+
+.cloud2{
+    grid-area: 6/1/7/2;
+    position: absolute;
+    margin-bottom: 532px;
+}
+
+.name{
+    display: inline-block;
+    margin: 0;
+    grid-area: 2/2/3/3;
+    font-family: 'Belanosima', sans-serif;
+}
+
+.designation{
+    grid-area: 4/2/5/3;
+    font-family: 'Belanosima', sans-serif;
+    font-weight: normal;
+}
+
+.cloud1{
+    grid-area: 1/3/2/4;
+    position: relative;
+}
+
+.name, .designation{
+    color: #AA96DA;
+}
+
+.about{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.myImage{
+    border: 4px solid #FFFFD2;
+    border-radius: 100%;
+    height: 150px;
+    width: 150px;
+}
+
+h2{
+    color: #AA96DA;
+    font-family: 'Belanosima', sans-serif;
+    font-weight: unset;
+    text-align: center;
+}
+
+p{
+    /* color: #AA96DA; */
+    font-family: 'Belanosima', sans-serif;
+    font-weight: unset;
+    text-align: center;
+}
+
+.myskill{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 10px;
+    margin-left: 20%;
+    margin-right: 20%;
+}
+
+.skillImage{
+    height: 200px;
+    width: 300px;
+    
+}
+
+.skillItem1{
+    grid-area: 1/1/2/2;
+}
+.skillItem2{
+    grid-area: 1/2/2/3;
+}
+.skillItem3{
+    grid-area: 2/1/3/2;
+}
+.skillItem4{
+    grid-area: 2/2/3/3;
+}
+
+.skillDiv p{
+    text-align: left;
+}
+
+.myskill h3{
+    color: #AA96DA;
+    font-family: 'Belanosima', sans-serif;
+    font-weight: unset;
+    padding-top: 0;
+}
+
+.skillH2{
+    margin-bottom: 20px;
+}
+hr{
+    border: 2px dotted #C5FAD5;
+    width: 50px;
+}
+
+.contact{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn{
+    margin-left: 35px;
+    height: 50px;
+    width: 100px;
+    background-color: #AA96DA;
+    color: #C5FAD5;
+    border: none;
+    border-radius: 8%;
+}
+
+.btn:hover{
+    cursor: pointer;
+    background-color: #b39ce9;
+    border: 2px solid #FFFFD2;
+}
+
+.footer{
+    background-color: #C5FAD5;
+}
+
+ul{
+    list-style: none;
+    gap: 20px;
+}
+
+ul{
+    /* width: 100; */
+    display: flex;
+    justify-content: space-between;
+    /* align-items:stretch; */
+    padding: 0;
+}
+
+li a{
+    color: #9f93bb;
+    font-family: 'Belanosima', sans-serif;
+    text-decoration: none;
+}
+
+li a:hover{
+    color: #b299ec ;
+    text-decoration: underline;
+    /* transform-origin: left right;
+    transition: transform 0.1s ease-out; */
+}
+
+li a:active{
+    color: #20f15f;
+}
+
+li a:visited{
+    color: grey;
+}
+
+.footerItems{
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+}
+
+.footerItems h3{
+    color: #AA96DA;
+    font-family: 'Belanosima', sans-serif;
+    font-weight: 100;
+
+}
+
+
+@media(max-width:1170px){
+    .skillItem1{
+        grid-area: 1/1/2/2;
+    }
+    .skillItem2{
+        grid-area: 2/1/3/2;
+        position: relative;
+    }
+    .skillItem3{
+        grid-area: 3/1/4/2;
+    }
+    .skillItem4{
+        grid-area: 4/1/5/2;
+    }
+
+    .myskill{
+       
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+       
+    }
+    
+}
